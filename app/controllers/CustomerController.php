@@ -12,7 +12,7 @@ class CustomerController extends Controller
 {
     public function actionIndex()
     {
-        $model = Customer::find()->All(); 
+        $model = Customer::find()->All();
         return $this->render('index',array('model'=>$model));
     }
 
