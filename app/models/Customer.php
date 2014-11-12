@@ -45,7 +45,7 @@ class Customer extends \yii\db\ActiveRecord
             [['office_address', 'warehouse_address', 'qc_require', 'subscribe'], 'string', 'max' => 128],
             [['memo'], 'string', 'max' => 255],
             [['customer_code','customer_name'],'unique','message'=>'{attribute}已经存在']
-        ];
+        ]; 
     }
 
     /**
