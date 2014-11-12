@@ -58,7 +58,7 @@ class Customer extends \yii\db\ActiveRecord
             'customer_code'     => '客户代码',
             'customer_name'     => '客户名称',
             'link_man'          => '联系人',
-            'logo_linkman'      => '品牌联系人',
+            'logo_linkman'      => '品牌负责人',
             'office_address'    => '办公地址及寄票对账',
             'warehouse_address' => '仓库地址及收货人信息',
             'qc_require'        => '收货要求',
