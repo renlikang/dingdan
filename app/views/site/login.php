@@ -1,47 +1,22 @@
-<?php
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
-
-/**
- * @var yii\web\View $this
- * @var yii\widgets\ActiveForm $form
- * @var app\models\LoginForm $model
- */
-$this->title = 'Login';
-$this->params['breadcrumbs'][] = $this->title;
-?>
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>Please fill out the following fields to login:</p>
-
-    <?php $form = ActiveForm::begin([
-        'id' => 'login-form',
-        'options' => ['class' => 'form-horizontal'],
-        'fieldConfig' => [
-            'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
-            'labelOptions' => ['class' => 'col-lg-1 control-label'],
-        ],
-    ]); ?>
-
-    <?= $form->field($model, 'username') ?>
-
-    <?= $form->field($model, 'password')->passwordInput() ?>
-
-    <?= $form->field($model, 'rememberMe', [
-        'template' => "<div class=\"col-lg-offset-1 col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
-    ])->checkbox() ?>
-
-    <div class="form-group">
-        <div class="col-lg-offset-1 col-lg-11">
-            <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-        </div>
-    </div>
-
-    <?php ActiveForm::end(); ?>
-
-    <div class="col-lg-offset-1" style="color:#999;">
-        You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>
-        To modify the username/password, please check out the code <code>app\models\User::$users</code>.
-    </div>
-</div>
+<style type="text/css">
+    *{margin:0;padding: 0;}
+    body{background: #444 url('<?= STATIC_DOMAIN;?>/img/carbon_fibre_big.png')}
+    .loginBox{width:420px;height:230px;padding:0 20px;border:1px solid #fff; color:#000; margin-top:40px; border-radius:8px;background: white;box-shadow:0 0 15px #222; background: -moz-linear-gradient(top, #fff, #efefef 8%);background: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#f4f4f4));font:11px/1.5em 'Microsoft YaHei' ;position: absolute;left:50%;top:50%;margin-left:-210px;margin-top:-115px;}
+    .loginBox h2{height:45px;font-size:20px;font-weight:normal;}
+    .loginBox .left{border-right:1px solid #ccc;height:100%;padding-right: 20px; }    
+</style>
+<div class="container">
+  <form method='post' action=<?= yii::$app->request->getUrl(); ?>
+    <section class="loginBox container-fluid">
+      <section class="col-md-3">
+        <h2>商户登录</h2>
+        <p><input type="text" name="username" /></p>
+        <p><input type="text" name="password" /></p>
+        <section class="container-fluid">
+          <label><input type="checkbox" name="rememberme" />下次自动登录</label>
+          <input type="submit" value=" 登录 " class="btn btn-primary">
+        </section>
+      </section>
+    </section><!-- /loginBox -->
+  </form>
+</div> <!-- /container -->

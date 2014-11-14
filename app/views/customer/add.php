@@ -15,19 +15,17 @@ use yii\widgets\ActiveForm;
             <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
                 <?= $form->field($model, 'customer_code') ?>
                 <?= $form->field($model, 'customer_name') ?>
-                <?= $form->field($model, 'link_man') ?>
-                <?= $form->field($model, 'logo_linkman') ?>
-                <?= $form->field($model, 'office_address') ?>
-                <?= $form->field($model, 'warehouse_address') ?>
-                <?= $form->field($model, 'subscribe') ?>
-                <?= $form->field($model, 'odo') ?>
-                <?= $form->field($model, 'good_order') ?>
-                <?= $form->field($model, 'signature') ?>
-                <?= $form->field($model, 'relatived_inspe') ?>
-                <?= $form->field($model, 'order_limit') ?>
-                <?= $form->field($model, 'good_pay') ?>
-                <?= $form->field($model, 'memo') ?>
-
+                <?= $form->field($model, 'cw_csode') ?>
+                <?= $form->field($model, 'shop_name') ?>
+                <?= $form->field($model, 'souhuoren') ?>
+                <?= $form->field($model, 'souhuo_address') ?>
+                <?= $form->field($model, 'lianxifangshi') ?>
+                <?= $form->field($model, 'customer_type')->dropDownList(yii::$app->params['customer_type'],['prompt' => '--请选择客户类型--']); ?>
+                <?= $form->field($model, 'rebate_type')->dropDownList(yii::$app->params['rebate_type'],['prompt' => '--请选择返利类型--']); ?>
+                <?= $form->field($model, 'rebate')->textInput(['class'=>"form-control",'placeholder'=>'%']); ?>
+                <?= $form->field($model, 'account') ?>
+                <?= $form->field($model, 'file_address') ?>
+                <?= $form->field($model, 'memo')->textarea(['class'=>"form-control",'rows'=>"5"]); ?>
                 <div class="form-group">
                     <?= Html::submitButton('保存', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                 </div>

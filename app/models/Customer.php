@@ -38,7 +38,9 @@ class Customer extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['customer_code','cw_csode','souhuoren','rebate_type','rebate','account','file_address','customer_name', 'shop_name', 'souhuo_address', 'lianxifangshi', 'customer_type', 'file_address',], 'required','message'=>'{attribute}不能为空'],
             [['rebate_type', 'rebate'], 'integer'],
+            [['customer_code'],'unique','message'=>'{attribute}已经存在'],
             [['customer_code', 'cw_csode', 'souhuoren', 'account'], 'string', 'max' => 64],
             [['customer_name', 'shop_name', 'souhuo_address', 'lianxifangshi', 'customer_type', 'file_address'], 'string', 'max' => 128],
             [['memo'], 'string', 'max' => 1000]

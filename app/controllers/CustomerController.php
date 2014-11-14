@@ -28,13 +28,13 @@ class CustomerController extends Controller
             $model = new Customer;
         }
         
-        if( yii::$app->request->Post('Customer'))
+        if( yii::$app->request->getIsPost() )
         {
             $model->attributes = yii::$app->request->Post('Customer');
             if($model->save())
             {
                 Yii::$app->session->setFlash('contactFormSubmitted');
-                $this->refresh();
+                $this->redirect(['customer/index']);
             }
         }
         return $this->render('add',array('model'=>$model,'title'=>$title));
