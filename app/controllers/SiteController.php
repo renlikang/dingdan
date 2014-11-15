@@ -54,7 +54,6 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
-        var_dump(1);exit;
         if( yii::$app->request->getIsPost() )
         {
             var_dump(Yii::$app->request->post());
