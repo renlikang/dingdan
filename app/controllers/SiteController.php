@@ -54,13 +54,18 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
+        if( yii::$app->request->getIsPost() )
+        {
+            var_dump(Yii::$app->request->post());
+            exit;
+        }        
         $this->layout = 'login';
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
         $model = new LoginForm();
-        var_dump(Yii::$app->request->post());
+        
 
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();

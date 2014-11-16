@@ -14,3 +14,4 @@ create table `xy_customer`(
  `file_address` varchar(128) not null default '' COMMENT '文件寄送地址',
  `memo` varchar(1000) not null default '' COMMENT '备注'
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
