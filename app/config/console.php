@@ -23,6 +23,16 @@ return [
             ],
         ],
         'db' => $db,
+       'urlManager' => [
+            'class' => 'yii\web\UrlManager',
+            'rule'  => [
+                         '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                         '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+                         '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                        ],
+            'enablePrettyUrl' => true,
+            'showScriptName' => true,
+        ],         
     ],
     'params' => $params,
 ];

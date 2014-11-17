@@ -1,6 +1,4 @@
 <?php
-define('STATIC_DOMAIN', '127.0.0.1/dingdan/app/static');
-define('WEB_DOMAIN', 'dingdan.com');
 return [
     'adminEmail' => 'admin@example.com',
     'customer_type'=>[1=>'账期客户',2=>'预付款客户'],
