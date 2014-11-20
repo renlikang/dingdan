@@ -1,7 +1,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <title>商家登录</title>
+    <title>用户登录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joychao <joy@joychao.cc>">    
   </head>
@@ -14,27 +14,32 @@
   <script class="bootstrap library" src="http://sandbox.runjs.cn/js/sandbox/bootstrap-2.2.0/js/bootstrap.min.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class="container">
-        <section class="loginBox row-fluid">
-          <section class="span7 left">
-            <h2>订单管理系统</h2>
-            <p><input type="text" name="username" placeholder="Username"/></p>
-            <p><input type="text" name="password" placeholder="Password"/></p>
-            <section class="row-fluid">
-              <label class="checkbox">
-                <input type="checkbox"> 自动登录
-              </label>
-            <section class="span1"><input type="button" value=" 登录 " class="btn btn-primary"></section>
+    <form action='<?=yii::$app->request->getUrl();?>' method='post'>
+      <div class="container">
+          <section class="loginBox row-fluid">
+            <section class="span7 left">
+              <h2>订单管理系统</h2>
+              <p><input type="text" name="username" placeholder="Username"/></p>
+              <p><input type="text" name="password" placeholder="Password"/></p>
+              <section class="row-fluid">
+                <label class="checkbox">
+                  <input type="checkbox" name='rememberMe'> 自动登录
+                </label>
+              <section class="span1">
+                <!-- <input type="button" value=" 登录 " class="btn btn-primary"> -->
+                <?= CHtml::?>
+              </section>
+              </section>
             </section>
-          </section>
-          <section class="span5 right">
-            <h2>订单管理系统</h2>
-            <section>
-              <p>这里有一段文字啊，很多的文字啊，太多太多的文字了，主要可以介绍介绍注册的好处和公司或者项目概况。。。</p>
+            <section class="span5 right">
+              <h2>订单管理系统</h2>
+              <section>
+                <p>这里有一段文字啊，很多的文字啊，太多太多的文字了，主要可以介绍介绍注册的好处和公司或者项目概况。。。</p>
+              </section>
             </section>
-          </section>
-        </section><!-- /loginBox -->
-    </div> <!-- /container -->
+          </section><!-- /loginBox -->
+      </div> <!-- /container -->
+    </form>
   </body>
 </html>
 
