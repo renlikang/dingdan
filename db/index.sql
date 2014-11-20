@@ -1,3 +1,8 @@
+create table `xy_user`(
+ `id` int(11) not null PRIMARY KEY AUTO_INCREMENT,
+ `username` varchar(64) not null COMMENT '用户名',
+ `password` varchar(128) not null default '' COMMENT '密码'
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 create table `xy_customer`(
  `id` int(11) not null PRIMARY KEY AUTO_INCREMENT,
  `customer_code` varchar(64) not null default '' COMMENT '客户代码',

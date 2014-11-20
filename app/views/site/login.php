@@ -1,3 +1,7 @@
+<?php
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+?>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
@@ -14,20 +18,26 @@
   <script class="bootstrap library" src="http://sandbox.runjs.cn/js/sandbox/bootstrap-2.2.0/js/bootstrap.min.js" type="text/javascript"></script>
   </head>
   <body>
-    <form action='<?=yii::$app->request->getUrl();?>' method='post'>
+      <?php $form = ActiveForm::begin([
+          'id' => 'login-form',
+          'options' => ['class' => 'form-horizontal'],
+  /*        'fieldConfig' => [
+              'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
+              'labelOptions' => ['class' => 'col-lg-1 control-label'],
+          ],*/
+      ]); ?>
       <div class="container">
           <section class="loginBox row-fluid">
             <section class="span7 left">
               <h2>订单管理系统</h2>
               <p><input type="text" name="username" placeholder="Username"/></p>
-              <p><input type="text" name="password" placeholder="Password"/></p>
+              <p><input type="password" name="password" placeholder="Password"/></p>
               <section class="row-fluid">
                 <label class="checkbox">
                   <input type="checkbox" name='rememberMe'> 自动登录
                 </label>
               <section class="span1">
-                <!-- <input type="button" value=" 登录 " class="btn btn-primary"> -->
-                <?= CHtml::?>
+                 <input type="submit" value=" 登录 " class="btn btn-primary"> 
               </section>
               </section>
             </section>
@@ -39,7 +49,7 @@
             </section>
           </section><!-- /loginBox -->
       </div> <!-- /container -->
-    </form>
+    <?php ActiveForm::end(); ?>
   </body>
 </html>
 
