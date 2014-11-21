@@ -1,0 +1,94 @@
+2014-11-21 02:20:14 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\base\Module.php:435
+Stack trace:
+#0 C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('', Array)
+#1 C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\base\Application.php(367): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\dingdan\app\web-test\index.php(15): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\web\Application.php:94
+Stack trace:
+#0 C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\base\Application.php(367): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\dingdan\app\web-test\index.php(15): yii\base\Application->run()
+#2 {main}
+2014-11-21 02:20:14 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'dingdan.com'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;C:\\windows\\SYSTEM32;C:\\windows;C:\\windows\\SYSTEM32\\WBEM;C:\\windows\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\PROGRAM FILES (X86)\\SUBLIME TEXT 2\\;C:\\WAMP\\BIN\\PHP\\PHP5.3.10;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;C:\\wamp\\bin\\php\\php5.4.3;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win64) PHP/5.4.3'
+    'SERVER_NAME' => 'dingdan.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/dingdan/app/web-test'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/dingdan/app/web-test'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/dingdan/app/web-test/index.php'
+    'REMOTE_PORT' => '53606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => 'http://dingdan.com/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1416536414.658
+    'REQUEST_TIME' => 1416536414
+]
+2014-11-21 02:20:15 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\base\Module.php:435
+Stack trace:
+#0 C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('', Array)
+#1 C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\base\Application.php(367): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\dingdan\app\web-test\index.php(15): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\web\Application.php:94
+Stack trace:
+#0 C:\wamp\www\dingdan\app\vendor\yiisoft\yii2\base\Application.php(367): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\dingdan\app\web-test\index.php(15): yii\base\Application->run()
+#2 {main}
+2014-11-21 02:20:15 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'dingdan.com'
+    'HTTP_PROXY_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;C:\\windows\\SYSTEM32;C:\\windows;C:\\windows\\SYSTEM32\\WBEM;C:\\windows\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\PROGRAM FILES (X86)\\SUBLIME TEXT 2\\;C:\\WAMP\\BIN\\PHP\\PHP5.3.10;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;C:\\wamp\\bin\\php\\php5.4.3;C:\\Program Files\\TortoiseGit\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.2 (Win64) PHP/5.4.3'
+    'SERVER_NAME' => 'dingdan.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/dingdan/app/web-test'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/dingdan/app/web-test'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/dingdan/app/web-test/index.php'
+    'REMOTE_PORT' => '53607'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => 'http://dingdan.com/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1416536415.159
+    'REQUEST_TIME' => 1416536415
+]
